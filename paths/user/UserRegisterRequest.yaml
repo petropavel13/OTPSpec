@@ -1,8 +1,7 @@
 post:
   tags:
-    - user
-    - registration
-  summary: "Метод регистрации нового пользователя в системе"
+    - auth
+  summary: "Регистрация нового пользователя"
   requestBody:
     content:
       application/json:

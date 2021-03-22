@@ -1,0 +1,13 @@
+post:
+  tags:
+    - code
+  summary: "Обновить код подтверждения"
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "../../requestBodies/CodeRefreshBody.yaml"
+  responses:
+    '200':
+      $ref: "../../responses/CodeRefreshResponse.yaml"
+

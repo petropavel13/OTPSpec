@@ -1,0 +1,13 @@
+description: "Тело запроса для подтверждения регистрации нового пользователя"
+type: object
+properties:
+  registrationId:
+    $ref: "../schemas/RegistrationId.yaml"
+  confirmationId:
+    $ref: "../schemas/ConfirmationId.yaml"
+  code:
+    $ref: "../schemas/ConfirmationCode.yaml"
+required:
+  - registrationId
+  - confirmationId
+  - code

@@ -1,0 +1,18 @@
+description: "Ответ на запрос обновления кода подтверждения"
+content: 
+  application/json:
+    schema:
+      oneOf:
+        - $ref: "../schemas/code/CodeRefreshResponseBody.yaml"
+        - $ref: "../schemas/BaseErrorResponseBody.yaml"
+    examples:
+      success_response:
+        value:
+          attemptsCount: 3
+          validUntil: "2021-03-22T20:32:28Z"
+          confirmationId: "A6E46ED7-FC08-45D3-9D5C-C629A42922DE"
+          codeNumber: 2
+      error_response:
+        value:
+          errorCode: 32
+          errorMessage: "Время действия кода истекло"

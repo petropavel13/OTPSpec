@@ -1,2 +1,0 @@
-UserRegisterResponse:
-  $ref: "./UserRegisterResponse.yaml"

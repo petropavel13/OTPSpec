@@ -33,17 +33,22 @@ externalDocs:
   description: Find out how to create Github repo for your OpenAPI spec.
   url: 'https://github.com/Rebilly/generator-openapi-repo'
 tags:
-  - name: registration
-    description: Signup operations
+  - name: auth
+    description: Авторизация
+  - name: code
+    description: Подтверждение действий кодом
   - name: base_error_response_body
     x-displayName: "BaseErrorResponseBody"
     description: |
       <SchemaDefinition schemaRef="#/components/schemas/BaseErrorResponseBody" />
 x-tagGroups:
-  - name: User Management
+  - name: Методы работы с пользователем
     tags:
-      - registration
-  - name: Base Responses
+      - auth
+  - name: Методы для подтверждения действий кодом
+    tags:
+      - code
+  - name: Базовые ответы сервера
     tags:
       - base_error_response_body
 paths:

@@ -1,2 +1,6 @@
 /user/register:
   $ref: "./user/UserRegisterRequest.yaml"
+/user/register/confirm:
+  $ref: "./user/UserRegisterConfirmRequest.yaml"
+/code/refresh:
+  $ref: "./code/CodeRefreshRequest.yaml"

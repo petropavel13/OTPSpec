@@ -1,0 +1,18 @@
+title: CodeRefreshResponseBody
+description: "Тело ответа успешного запроса на обновление кода подтверждения"
+type: object
+properties:
+  attemptsCount:
+    type: int
+    description: "Оставшееся количество попыток для ввода кода"
+  validUntil:
+    $ref: "./../ConfirmationCodeExpiration.yaml"
+  confirmationId:
+    $ref: "./../ConfirmationId.yaml"
+  codeNumber:
+    $ref: "./../ConfirmationCodeNumber.yaml"
+required:
+  - attemptsCount
+  - until
+  - confirmationId
+  - codeNumber

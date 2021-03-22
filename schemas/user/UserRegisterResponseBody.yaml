@@ -2,8 +2,13 @@ title: UserRegisterResponseBody
 description: "Тело ответа успешного запроса на регистрацию пользователя"
 type: object
 properties:
+  registrationId:
+    $ref: "./../RegistrationId.yaml"
   confirmationId:
-    type: string
-    description: "Идентификатор подтверждения"
+    $ref: "./../ConfirmationId.yaml"
+  codeNumber:
+    $ref: "./../ConfirmationCodeNumber.yaml"
 required:
+  - registrationId
   - confirmationId
+  - codeNumber

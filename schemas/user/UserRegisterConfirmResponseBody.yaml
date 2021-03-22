@@ -1,0 +1,10 @@
+title: UserRegisterResponseBody
+description: "Тело ответа успешного запроса на подтверждение регистрации пользователя"
+type: object
+properties:
+  apiKey:
+    $ref: "./../ApiKey.yaml"
+  additionalMultiFactorAuth:
+    $ref: "./../MultiFactorAuth.yaml"
+required:
+  - apiKey

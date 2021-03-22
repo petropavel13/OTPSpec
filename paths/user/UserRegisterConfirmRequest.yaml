@@ -1,0 +1,13 @@
+post:
+  tags:
+    - auth
+  summary: "Подтверждение регистрации пользователя"
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "../../requestBodies/UserRegisterConfirmBody.yaml"
+  responses:
+    '200':
+      $ref: "../../responses/UserRegisterConfirmResponse.yaml"
+
