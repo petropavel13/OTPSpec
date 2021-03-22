@@ -1,0 +1,9 @@
+title: UserRegisterResponseBody
+description: "Тело ответа успешного запроса на регистрацию пользователя"
+type: object
+properties:
+  confirmationId:
+    type: string
+    description: "Идентификатор подтверждения"
+required:
+  - confirmationId

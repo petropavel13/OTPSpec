@@ -1,0 +1,53 @@
+openapi: 3.0.0
+servers:
+  - url: /touchin.otp.io/v2
+    description: Default server
+  - url: /touchin.otp.io/sandbox
+    description: Sandbox server
+info:
+  description: |
+    This is a sample server OTP server.
+
+    # Introduction
+    This API is documented in **OpenAPI format**.
+
+    # Cross-Origin Resource Sharing
+    This API features Cross-Origin Resource Sharing (CORS) implemented in compliance with  [W3C spec](https://www.w3.org/TR/cors/).
+    And that allows cross-domain communication from the browser.
+    All responses have a wildcard same-origin which makes them completely public and accessible to everyone, including any code on any site.
+
+  version: 1.0.0
+  title: Swagger OTP
+  termsOfService: 'http://swagger.io/terms/'
+  contact:
+    name: API Support
+    email: hi@touchin.ru
+    url: https://github.com/Redocly/redoc
+  x-logo:
+    url: 'https://touchin.ru/images/logo_text_white_v2.cfca2e6914ab.png'
+    altText: OTP logo
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+externalDocs:
+  description: Find out how to create Github repo for your OpenAPI spec.
+  url: 'https://github.com/Rebilly/generator-openapi-repo'
+tags:
+  - name: registration
+    description: Signup operations
+  - name: base_error_response_body
+    x-displayName: "BaseErrorResponseBody"
+    description: |
+      <SchemaDefinition schemaRef="#/components/schemas/BaseErrorResponseBody" />
+x-tagGroups:
+  - name: User Management
+    tags:
+      - registration
+  - name: Base Responses
+    tags:
+      - base_error_response_body
+paths:
+  $ref: "./paths/_index.yaml"    
+components:
+  schemas:
+    $ref: "./schemas/_index.yaml"

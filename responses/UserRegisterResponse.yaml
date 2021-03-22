@@ -1,0 +1,15 @@
+description: "Ответ на запрос регистрации пользователя"
+content: 
+  application/json:
+    schema:
+      oneOf:
+        - $ref: "../schemas/UserRegisterResponseBody.yaml"
+        - $ref: "../schemas/BaseErrorResponseBody.yaml"
+    examples:
+      success_response:
+        value:
+          confirmationId: "FDE5BDD0-11D6-478D-AE8C-9467DB35B900"
+      error_response:
+        value:
+          errorCode: 42
+          errorMessage: "Пользователь уже зарегистрирован"

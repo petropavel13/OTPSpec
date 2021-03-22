@@ -1,0 +1,14 @@
+post:
+  tags:
+    - user
+    - registration
+  summary: "Метод регистрации нового пользователя в системе"
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "../../requestBodies/UserRegisterBody.yaml"
+  responses:
+    '200':
+      $ref: "../../responses/UserRegisterResponse.yaml"
+

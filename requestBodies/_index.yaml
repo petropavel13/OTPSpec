@@ -1,0 +1,2 @@
+UserRegisterBody:
+  $ref: "./UserRegisterBody.yaml"
