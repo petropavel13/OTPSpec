@@ -1,2 +1,0 @@
-BaseErrorResponseBody:
-  $ref: "./BaseErrorResponseBody.yaml"

@@ -1,9 +1,0 @@
-description: "Тело запроса для регистрации нового пользователя"
-type: object
-properties:
-  login:
-    type: string
-    description: "Телефон, почта или другой идентификатор"
-    example: "hello@touchin.ru"
-required:
-  - login

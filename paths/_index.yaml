@@ -1,2 +1,0 @@
-/user/register:
-  $ref: "./user/UserRegisterRequest.yaml"
