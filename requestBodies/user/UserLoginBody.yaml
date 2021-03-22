@@ -1,0 +1,10 @@
+description: "Тело запроса для авторизации пользователя по логину и паролю"
+type: object
+properties:
+  login:
+    $ref: "../../schemas/UserLogin.yaml"
+  password:
+    $ref: "../../schemas/UserPassword.yaml"
+required:
+  - login
+  - password

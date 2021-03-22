@@ -1,0 +1,11 @@
+title: BaseAuthResponseBody
+description: "Базовый набор полей для подтверждения действия 2FA кодом"
+type: object
+properties:
+  attemptsCount:
+    type: int
+    description: "Оставшееся количество попыток для ввода кода"
+  validUntil:
+    $ref: "./ConfirmationCodeExpiration.yaml"
+  codeNumber:
+    $ref: "./ConfirmationCodeNumber.yaml"

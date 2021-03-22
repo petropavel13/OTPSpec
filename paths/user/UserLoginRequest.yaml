@@ -1,0 +1,13 @@
+post:
+  tags:
+    - auth
+  summary: "Авторизация пользователя по логину и паролю"
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "../../requestBodies/user/UserLoginBody.yaml"
+  responses:
+    '200':
+      $ref: "../../responses/user/UserLoginResponse.yaml"
+

@@ -1,9 +1,9 @@
-description: "Ответ на запрос регистрации пользователя"
+description: "Ответ на запрос авторизации пользователя по логину и паролю"
 content: 
   application/json:
     schema:
       oneOf:
-        - $ref: "../../schemas/user/UserRegisterResponseBody.yaml"
+        - $ref: "../../schemas/user/UserLoginResponseBody.yaml"
         - $ref: "../../schemas/BaseErrorResponseBody.yaml"
     examples:
       success_response:
@@ -15,5 +15,5 @@ content:
           registrationId: "716f6e34d6c12ed3c523759496d140cb9cd9b44c"
       error_response:
         value:
-          errorCode: 42
-          errorMessage: "Пользователь уже зарегистрирован"
+          errorCode: 10
+          errorMessage: "Пользователь не существует"

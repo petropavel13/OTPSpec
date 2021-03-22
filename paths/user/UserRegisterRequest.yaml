@@ -6,7 +6,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../../requestBodies/user//UserRegisterBody.yaml"
+          $ref: "../../requestBodies/user/UserRegisterBody.yaml"
   responses:
     '200':
       $ref: "../../responses/user/UserRegisterResponse.yaml"

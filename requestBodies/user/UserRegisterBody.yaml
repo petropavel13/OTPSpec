@@ -2,8 +2,6 @@ description: "Тело запроса для регистрации нового
 type: object
 properties:
   login:
-    type: string
-    description: "Телефон, почта или другой идентификатор"
-    example: "hello@touchin.ru"
+    $ref: "../../schemas/UserLogin.yaml"
 required:
   - login
