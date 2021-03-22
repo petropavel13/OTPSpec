@@ -3,17 +3,12 @@ content:
   application/json:
     schema:
       oneOf:
-        - $ref: "../schemas/user/UserRegisterConfirmResponseBody.yaml"
-        - $ref: "../schemas/BaseErrorResponseBody.yaml"
+        - $ref: "../../schemas/user/UserRegisterConfirmResponseBody.yaml"
+        - $ref: "../../schemas/BaseErrorResponseBody.yaml"
     examples:
       success_response:
         value:
           apiKey: "QTcwNTY3QTEtMzg2My00QjQzLTg4OEYtRDBDM0RERDM3QzkyCg=="
-          additionalTwoFactorAuth: null
-      success_response_additional_2fa:
-        value:
-          apiKey: "QTcwNTY3QTEtMzg2My00QjQzLTg4OEYtRDBDM0RERDM3QzkyCg=="
-          additionalTwoFactorAuth: "telegram"
       error_response:
         value:
           errorCode: 13

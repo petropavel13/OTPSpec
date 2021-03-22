@@ -4,3 +4,5 @@
   $ref: "./user/UserRegisterConfirmRequest.yaml"
 /code/refresh:
   $ref: "./code/CodeRefreshRequest.yaml"
+/code/confirm:
+  $ref: "./code/CodeConfirmRequest.yaml"

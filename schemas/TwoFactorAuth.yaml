@@ -1,2 +1,3 @@
 type: string
 enum: [sms, email, telegram, google]
+example: "sms"

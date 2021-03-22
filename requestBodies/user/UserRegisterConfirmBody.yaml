@@ -2,11 +2,11 @@ description: "Тело запроса для подтверждения реги
 type: object
 properties:
   registrationId:
-    $ref: "../schemas/RegistrationId.yaml"
+    $ref: "../../schemas/RegistrationId.yaml"
   confirmationId:
-    $ref: "../schemas/ConfirmationId.yaml"
+    $ref: "../../schemas/ConfirmationId.yaml"
   code:
-    $ref: "../schemas/ConfirmationCode.yaml"
+    $ref: "../../schemas/ConfirmationCode.yaml"
 required:
   - registrationId
   - confirmationId

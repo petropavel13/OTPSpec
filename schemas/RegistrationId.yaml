@@ -1,3 +1,2 @@
 type: string
-format: uuid
 description: "Идентификатор регистрации"

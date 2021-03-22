@@ -1,0 +1,20 @@
+title: CodeConfirmResponseBody
+description: "Тело ответа успешного запроса на подтверждение действия 2FA кодом"
+type: object
+properties:
+  attemptsCount:
+    type: int
+    description: "Оставшееся количество попыток для ввода кода"
+  validUntil:
+    $ref: "./../ConfirmationCodeExpiration.yaml"
+  codeNumber:
+    $ref: "./../ConfirmationCodeNumber.yaml"
+  additionalTwoFactorAuth:
+    $ref: "./../TwoFactorAuth.yaml"
+  nextConfirmationId:
+    $ref: "./../ConfirmationId.yaml"
+  successConfirm:
+    type: boolean
+    description: "Флаг успешного подтверждения действия"
+required:
+  - successConfirm

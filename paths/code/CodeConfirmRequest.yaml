@@ -1,0 +1,12 @@
+post:
+  tags:
+    - code
+  summary: "Подтверждение действия введенным кодом"
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "../../requestBodies/code/CodeConfirmBody.yaml"
+  responses:
+    '200':
+      $ref: "../../responses/code/CodeConfirmResponse.yaml"

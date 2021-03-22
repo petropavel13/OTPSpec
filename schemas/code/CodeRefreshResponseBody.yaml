@@ -12,7 +12,4 @@ properties:
   codeNumber:
     $ref: "./../ConfirmationCodeNumber.yaml"
 required:
-  - attemptsCount
-  - until
   - confirmationId
-  - codeNumber

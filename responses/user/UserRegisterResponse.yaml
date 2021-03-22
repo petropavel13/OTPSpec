@@ -3,12 +3,14 @@ content:
   application/json:
     schema:
       oneOf:
-        - $ref: "../schemas/user/UserRegisterResponseBody.yaml"
-        - $ref: "../schemas/BaseErrorResponseBody.yaml"
+        - $ref: "../../schemas/user/UserRegisterResponseBody.yaml"
+        - $ref: "../../schemas/BaseErrorResponseBody.yaml"
     examples:
       success_response:
         value:
           confirmationId: "FDE5BDD0-11D6-478D-AE8C-9467DB35B900"
+          registrationId: "716f6e34d6c12ed3c523759496d140cb9cd9b44c"
+          codeNumber: 2
       error_response:
         value:
           errorCode: 42

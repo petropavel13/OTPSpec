@@ -2,8 +2,8 @@ description: "Тело запроса для обновления кода по�
 type: object
 properties:
   confirmationId:
-    $ref: "../schemas/ConfirmationId.yaml"
+    $ref: "../../schemas/ConfirmationId.yaml"
   apiKey:
-    $ref: "../schemas/ApiKey.yaml"
+    $ref: "../../schemas/ApiKey.yaml"
 required:
   - confirmationId

@@ -6,8 +6,8 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../../requestBodies/UserRegisterConfirmBody.yaml"
+          $ref: "../../requestBodies/user/UserRegisterConfirmBody.yaml"
   responses:
     '200':
-      $ref: "../../responses/UserRegisterConfirmResponse.yaml"
+      $ref: "../../responses/user/UserRegisterConfirmResponse.yaml"
 

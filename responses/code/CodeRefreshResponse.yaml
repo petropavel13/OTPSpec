@@ -3,8 +3,8 @@ content:
   application/json:
     schema:
       oneOf:
-        - $ref: "../schemas/code/CodeRefreshResponseBody.yaml"
-        - $ref: "../schemas/BaseErrorResponseBody.yaml"
+        - $ref: "../../schemas/code/CodeRefreshResponseBody.yaml"
+        - $ref: "../../schemas/BaseErrorResponseBody.yaml"
     examples:
       success_response:
         value:

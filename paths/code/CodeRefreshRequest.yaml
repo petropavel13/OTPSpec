@@ -6,8 +6,8 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../../requestBodies/CodeRefreshBody.yaml"
+          $ref: "../../requestBodies/code/CodeRefreshBody.yaml"
   responses:
     '200':
-      $ref: "../../responses/CodeRefreshResponse.yaml"
+      $ref: "../../responses/code/CodeRefreshResponse.yaml"
 

@@ -1,0 +1,12 @@
+description: "Тело запроса для подтверждения действия 2FA кодом"
+type: object
+properties:
+  confirmationId:
+    $ref: "../../schemas/ConfirmationId.yaml"
+  code:
+    $ref: "../../schemas/ConfirmationCode.yaml"
+  apiKey:
+    $ref: "../../schemas/ApiKey.yaml"
+required:
+  - confirmationId
+  - code

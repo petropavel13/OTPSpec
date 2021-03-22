@@ -1,2 +1,3 @@
 type: string
 description: "Код подтверждения"
+example: "1234"
