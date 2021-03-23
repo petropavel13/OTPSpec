@@ -1,3 +1,4 @@
+title: CodeConfirmBody
 description: "Тело запроса для подтверждения действия 2FA кодом"
 type: object
 properties:

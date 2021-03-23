@@ -1,4 +1,5 @@
 post:
+  operationId: UserLoginRequest
   tags:
     - auth
   summary: "Авторизация пользователя по логину и паролю"

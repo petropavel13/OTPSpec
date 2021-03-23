@@ -35,12 +35,12 @@ externalDocs:
 tags:
   - name: auth
     description: Авторизация
-  - name: code
-    description: Подтверждение действий кодом
   - name: base_error_response_body
     x-displayName: "BaseErrorResponseBody"
     description: |
       <SchemaDefinition schemaRef="#/components/schemas/BaseErrorResponseBody" />
+  - name: code
+    description: Подтверждение действий кодом
 x-tagGroups:
   - name: Методы работы с пользователем
     tags:

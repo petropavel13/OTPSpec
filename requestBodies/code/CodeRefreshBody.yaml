@@ -1,3 +1,4 @@
+title: CodeRefreshBody
 description: "Тело запроса для обновления кода подтверждения"
 type: object
 properties:

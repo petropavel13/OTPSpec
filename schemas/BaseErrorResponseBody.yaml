@@ -4,7 +4,7 @@ type: object
 properties:
   errorCode:
     description: "Код ошибки"
-    type: int
+    type: integer
   errorMessage:
     description: "Текст сообщения об ошибке"
     type: string

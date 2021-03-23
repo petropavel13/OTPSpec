@@ -1,2 +1,32 @@
 BaseErrorResponseBody:
   $ref: "./BaseErrorResponseBody.yaml"
+ConfirmationCode:
+  $ref: "./ConfirmationCode.yaml"
+ConfirmationCodeNumber:
+  $ref: "./ConfirmationCodeNumber.yaml"
+UserPassword:
+  $ref: "./UserPassword.yaml"
+ConfirmationId:
+  $ref: "./ConfirmationId.yaml"
+ApiKey:
+  $ref: "./ApiKey.yaml"
+CodeConfirmResponseBody:
+  $ref: "./code/CodeConfirmResponseBody.yaml"
+CodeRefreshResponseBody:
+  $ref: "./code/CodeRefreshResponseBody.yaml"
+ConfirmationCodeExpiration:
+  $ref: "./ConfirmationCodeExpiration.yaml"
+UserRegisterConfirmResponseBody:
+  $ref: "./user/UserRegisterConfirmResponseBody.yaml"
+UserLoginResponseBody:
+  $ref: "./user/UserLoginResponseBody.yaml"
+UserRegisterResponseBody:
+  $ref: "./user/UserRegisterResponseBody.yaml"
+RegistrationId:
+  $ref: "./RegistrationId.yaml"
+BaseAuthResponseBody:
+  $ref: "./BaseAuthResponseBody.yaml"
+TwoFactorAuth:
+  $ref: "./TwoFactorAuth.yaml"
+UserLogin:
+  $ref: "./UserLogin.yaml"

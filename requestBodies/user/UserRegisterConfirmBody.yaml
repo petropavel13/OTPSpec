@@ -1,3 +1,4 @@
+title: UserRegisterConfirmBody
 description: "Тело запроса для подтверждения регистрации нового пользователя"
 type: object
 properties:

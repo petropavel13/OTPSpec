@@ -1,3 +1,4 @@
+title: UserRegisterBody
 description: "Тело запроса для регистрации нового пользователя"
 type: object
 properties:

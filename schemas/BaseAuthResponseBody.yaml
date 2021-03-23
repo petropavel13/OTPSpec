@@ -3,7 +3,7 @@ description: "Базовый набор полей для подтвержден
 type: object
 properties:
   attemptsCount:
-    type: int
+    type: integer
     description: "Оставшееся количество попыток для ввода кода"
   validUntil:
     $ref: "./ConfirmationCodeExpiration.yaml"

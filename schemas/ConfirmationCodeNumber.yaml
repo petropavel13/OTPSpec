@@ -1,2 +1,2 @@
-type: int
+type: integer
 description: "Номер отправленного кода"
