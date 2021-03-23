@@ -9,3 +9,7 @@ properties:
     $ref: "./ConfirmationCodeExpiration.yaml"
   codeNumber:
     $ref: "./ConfirmationCodeNumber.yaml"
+  refreshableAfter:
+    type: string
+    format: date-time
+    description: "Момент, когда можно повторно запросить новый 2FA код"

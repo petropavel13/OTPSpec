@@ -1,11 +1,10 @@
-title: UserLoginResponseBody
-description: "Тело ответа успешного запроса на авторизацию пользователя по логину и паролю"
-type: object
-properties:
-  confirmationId:
-    $ref: "./../ConfirmationId.yaml"
-  codeNumber:
-    $ref: "./../ConfirmationCodeNumber.yaml"
-required:
-  - registrationId
-  - confirmationId
+allOf:
+  - $ref: "./../BaseAuthResponseBody.yaml" # parent
+  - title: UserLoginResponseBody
+    description: "Тело ответа успешного запроса на авторизацию пользователя по логину и паролю"
+    type: object
+    properties:
+      confirmationId:
+        $ref: "./../ConfirmationId.yaml"
+    required:
+      - confirmationId
