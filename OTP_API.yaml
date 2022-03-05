@@ -52,7 +52,17 @@ x-tagGroups:
     tags:
       - base_error_response_body
 paths:
-  $ref: "./paths/_index.yaml"    
+  /user/register:
+    $ref: "./paths/user/UserRegisterRequest.yaml"
+  /user/register/confirm:
+    $ref: "./paths/user/UserRegisterConfirmRequest.yaml"
+  /user/login:
+    $ref: "./paths/user/UserLoginRequest.yaml"
+  /code/refresh:
+    $ref: "./paths/code/CodeRefreshRequest.yaml"
+  /code/confirm:
+    $ref: "./paths/code/CodeConfirmRequest.yaml"
 components:
   schemas:
-    $ref: "./schemas/_index.yaml"
+    BaseErrorResponseBody:
+      $ref: "./schemas/BaseErrorResponseBody.yaml"

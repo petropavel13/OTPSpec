@@ -1,5 +1,5 @@
 post:
-  operationId: UserConfirmRequest
+  operationId: CodeConfirmRequest
   tags:
     - code
   summary: "Подтверждение действия введенным кодом"
