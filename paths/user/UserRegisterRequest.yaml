@@ -24,6 +24,13 @@ post:
                 refreshableAfter: "2021-03-22T20:30:00Z"
                 confirmationId: "FDE5BDD0-11D6-478D-AE8C-9467DB35B900"
                 registrationId: "716f6e34d6c12ed3c523759496d140cb9cd9b44c"
+    '400':
+      description: "Ответ на запрос если пользователь уже зарегистрирован"
+      content: 
+        application/json:
+          schema:
+            $ref: "../../schemas/BaseErrorResponseBody.yaml"
+          examples:
             error_response:
               value:
                 errorCode: 42

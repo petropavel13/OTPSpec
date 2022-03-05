@@ -1,3 +1,10 @@
-oneOf:
-  - $ref: "../../schemas/code/CodeRefreshResponseBody.yaml"
-  - $ref: "../../schemas/BaseErrorResponseBody.yaml"
+allOf:
+  - $ref: "./../../schemas/BaseAuthResponseBody.yaml" # parent
+  - title: CodeRefreshResponse
+    description: "Тело ответа успешного запроса на обновление кода подтверждения"
+    type: object
+    properties:
+      newConfirmationId:
+        $ref: "./../../schemas/ConfirmationId.yaml"
+    required:
+      - newConfirmationId

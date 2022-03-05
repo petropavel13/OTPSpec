@@ -1,3 +1,8 @@
-oneOf:
-  - $ref: "../../schemas/user/UserRegisterConfirmResponseBody.yaml"
-  - $ref: "../../schemas/BaseErrorResponseBody.yaml"
+title: UserRegisterConfirmResponse
+description: "Тело ответа успешного запроса на подтверждение регистрации пользователя"
+type: object
+properties:
+  apiKey:
+    $ref: "./../../schemas/ApiKey.yaml"
+required:
+  - apiKey

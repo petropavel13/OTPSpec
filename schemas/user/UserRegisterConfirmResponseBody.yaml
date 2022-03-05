@@ -1,8 +1,0 @@
-title: UserRegisterConfirmResponseBody
-description: "Тело ответа успешного запроса на подтверждение регистрации пользователя"
-type: object
-properties:
-  apiKey:
-    $ref: "./../ApiKey.yaml"
-required:
-  - apiKey

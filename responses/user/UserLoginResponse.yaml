@@ -1,3 +1,10 @@
-oneOf:
-  - $ref: "../../schemas/user/UserLoginResponseBody.yaml"
-  - $ref: "../../schemas/BaseErrorResponseBody.yaml"
+allOf:
+  - $ref: "./../../schemas/BaseAuthResponseBody.yaml" # parent
+  - title: UserLoginResponse
+    description: "Тело ответа успешного запроса на авторизацию пользователя по логину и паролю"
+    type: object
+    properties:
+      confirmationId:
+        $ref: "./../../schemas/ConfirmationId.yaml"
+    required:
+      - confirmationId

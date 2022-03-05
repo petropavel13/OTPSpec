@@ -23,6 +23,13 @@ post:
                 codeNumber: 2
                 refreshableAfter: "2021-03-22T20:30:00Z"
                 confirmationId: "FDE5BDD0-11D6-478D-AE8C-9467DB35B900"
+    '404':
+      description: "Ответ на запрос авторизации если пользователь не существует"
+      content: 
+        application/json:
+          schema:
+            $ref: "../../schemas/BaseErrorResponseBody.yaml"
+          examples:
             error_response:
               value:
                 errorCode: 10

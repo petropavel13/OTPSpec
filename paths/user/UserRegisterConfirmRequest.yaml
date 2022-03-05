@@ -19,6 +19,13 @@ post:
             success_response:
               value:
                 apiKey: "QTcwNTY3QTEtMzg2My00QjQzLTg4OEYtRDBDM0RERDM3QzkyCg=="
+    '400':
+      description: "Ответ на запрос подтверждения регистрации пользователя"
+      content: 
+        application/json:
+          schema:
+            $ref: "../../schemas/BaseErrorResponseBody.yaml"
+          examples:
             error_response:
               value:
                 errorCode: 13

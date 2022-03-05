@@ -32,6 +32,13 @@ post:
                 additionalTwoFactorAuth: "telegram"
                 nextConfirmationId: "A6E46ED7-FC08-45D3-9D5C-C629A42922DE"
                 successConfirm: false
+    '400':
+      description: "Ответ на случай истечения времени действия кода подтверждения"
+      content:
+        application/json:
+          schema:
+            $ref: "../../schemas/BaseErrorResponseBody.yaml"
+          examples:
             error_response:
               value:
                 errorCode: 32
