@@ -3,6 +3,9 @@ post:
   tags:
     - code
   summary: "Обновить код подтверждения"
+  security:
+    - {} # unauthorized
+    - ApiKeyAuth: []
   requestBody:
     content:
       application/json:

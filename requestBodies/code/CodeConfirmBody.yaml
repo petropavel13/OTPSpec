@@ -6,8 +6,6 @@ properties:
     $ref: "../../schemas/ConfirmationId.yaml"
   code:
     $ref: "../../schemas/ConfirmationCode.yaml"
-  apiKey:
-    $ref: "../../schemas/ApiKey.yaml"
 required:
   - confirmationId
   - code

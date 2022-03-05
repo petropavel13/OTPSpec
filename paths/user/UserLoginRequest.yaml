@@ -3,6 +3,8 @@ post:
   tags:
     - auth
   summary: "Авторизация пользователя по логину и паролю"
+  security:
+    - {} # unauthorized
   requestBody:
     content:
       application/json:

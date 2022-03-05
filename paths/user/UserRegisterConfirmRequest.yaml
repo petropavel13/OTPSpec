@@ -3,6 +3,8 @@ post:
   tags:
     - auth
   summary: "Подтверждение регистрации пользователя"
+  security:
+    - {} # unauthorized
   requestBody:
     content:
       application/json:

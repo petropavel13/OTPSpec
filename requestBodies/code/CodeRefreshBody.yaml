@@ -4,7 +4,5 @@ type: object
 properties:
   confirmationId:
     $ref: "../../schemas/ConfirmationId.yaml"
-  apiKey:
-    $ref: "../../schemas/ApiKey.yaml"
 required:
   - confirmationId

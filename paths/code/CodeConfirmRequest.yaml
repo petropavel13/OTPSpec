@@ -3,6 +3,9 @@ post:
   tags:
     - code
   summary: "Подтверждение действия введенным кодом"
+  security:
+    - {} # unauthorized
+    - ApiKeyAuth: []
   requestBody:
     content:
       application/json:
