@@ -10,4 +10,29 @@ post:
           $ref: "../../requestBodies/code/CodeConfirmBody.yaml"
   responses:
     '200':
-      $ref: "../../responses/code/CodeConfirmResponse.yaml"
+      description: "Ответ на запрос подтверждения действия 2FA кодом"
+      content: 
+        application/json:
+          schema:
+            $ref: "../../responses/code/CodeConfirmResponse.yaml"
+          examples:
+            success_response:
+              value:
+                attemptsCount: null
+                validUntil: null
+                codeNumber: null
+                additionalTwoFactorAuth: null
+                nextConfirmationId: null
+                successConfirm: true
+            success_response_additional_2fa:
+              value:
+                attemptsCount: 3
+                validUntil: "2021-03-22T20:32:28Z"
+                codeNumber: 2
+                additionalTwoFactorAuth: "telegram"
+                nextConfirmationId: "A6E46ED7-FC08-45D3-9D5C-C629A42922DE"
+                successConfirm: false
+            error_response:
+              value:
+                errorCode: 32
+                errorMessage: "Время действия кода истекло"

@@ -10,5 +10,21 @@ post:
           $ref: "../../requestBodies/user/UserRegisterBody.yaml"
   responses:
     '200':
-      $ref: "../../responses/user/UserRegisterResponse.yaml"
-
+      description: "Ответ на запрос регистрации пользователя"
+      content: 
+        application/json:
+          schema:
+            $ref: "../../responses/user/UserRegisterResponse.yaml"
+          examples:
+            success_response:
+              value:
+                attemptsCount: 3
+                validUntil: "2021-03-22T20:32:28Z"
+                codeNumber: 2
+                refreshableAfter: "2021-03-22T20:30:00Z"
+                confirmationId: "FDE5BDD0-11D6-478D-AE8C-9467DB35B900"
+                registrationId: "716f6e34d6c12ed3c523759496d140cb9cd9b44c"
+            error_response:
+              value:
+                errorCode: 42
+                errorMessage: "Пользователь уже зарегистрирован"

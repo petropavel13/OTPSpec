@@ -10,5 +10,22 @@ post:
           $ref: "../../requestBodies/code/CodeRefreshBody.yaml"
   responses:
     '200':
-      $ref: "../../responses/code/CodeRefreshResponse.yaml"
+      description: "Ответ на запрос обновления кода подтверждения"
+      content: 
+        application/json:
+          schema:
+            $ref: "../../responses/code/CodeRefreshResponse.yaml"
+          examples:
+            success_response:
+              value:
+                attemptsCount: 3
+                validUntil: "2021-03-22T20:32:28Z"
+                newConfirmationId: "A6E46ED7-FC08-45D3-9D5C-C629A42922DE"
+                codeNumber: 2
+                refreshableAfter: "2021-03-22T20:30:00Z"
+            error_response:
+              value:
+                errorCode: 32
+                errorMessage: "Время действия кода истекло"
+
 

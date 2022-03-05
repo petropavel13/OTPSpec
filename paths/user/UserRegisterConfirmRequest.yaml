@@ -10,5 +10,16 @@ post:
           $ref: "../../requestBodies/user/UserRegisterConfirmBody.yaml"
   responses:
     '200':
-      $ref: "../../responses/user/UserRegisterConfirmResponse.yaml"
-
+      description: "Ответ на запрос подтверждения регистрации пользователя"
+      content: 
+        application/json:
+          schema:
+            $ref: "../../responses/user/UserRegisterConfirmResponse.yaml"
+          examples:
+            success_response:
+              value:
+                apiKey: "QTcwNTY3QTEtMzg2My00QjQzLTg4OEYtRDBDM0RERDM3QzkyCg=="
+            error_response:
+              value:
+                errorCode: 13
+                errorMessage: "Идентификатор подтверждения устарел"

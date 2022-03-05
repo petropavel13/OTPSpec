@@ -10,5 +10,21 @@ post:
           $ref: "../../requestBodies/user/UserLoginBody.yaml"
   responses:
     '200':
-      $ref: "../../responses/user/UserLoginResponse.yaml"
+      description: "Ответ на запрос авторизации пользователя по логину и паролю"
+      content: 
+        application/json:
+          schema:
+            $ref: "../../responses/user/UserLoginResponse.yaml"
+          examples:
+            success_response:
+              value:
+                attemptsCount: 3
+                validUntil: "2021-03-22T20:32:28Z"
+                codeNumber: 2
+                refreshableAfter: "2021-03-22T20:30:00Z"
+                confirmationId: "FDE5BDD0-11D6-478D-AE8C-9467DB35B900"
+            error_response:
+              value:
+                errorCode: 10
+                errorMessage: "Пользователь не существует"
 
